@@ -18,7 +18,7 @@ import { GithubSignInForm } from "@/features/auth/components/github-sign-in-form
 
 export const metadata: Metadata = {
   title: "Sign In",
-  description: "Sign in to your AI Code Reviewer with your Github account.",
+  description: "Sign in to Just AI Reviewer with your Github account.",
 };
 
 type SignInPageProps = {
@@ -34,7 +34,7 @@ const SignInPage = async ({ searchParams }: SignInPageProps) => {
         <div className="mb-3 flex justify-center pt-1">
           <Image
             src="/logo.png"
-            alt="AI Code Reviewer Logo"
+            alt="Just AI Reviewer Logo"
             width={40}
             height={37}
             className="size-10 object-contain"
@@ -45,7 +45,7 @@ const SignInPage = async ({ searchParams }: SignInPageProps) => {
           Welcome back
         </CardTitle>
         <CardDescription className="text-sm text-muted-foreground">
-          Sign in to your AI Code Reviewer with your Github account.
+          Sign in to Just AI Reviewer with your Github account.
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-3">
