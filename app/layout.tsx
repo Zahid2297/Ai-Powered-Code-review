@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { QueryProvider } from "@/components/providers/query-provider";
 import { Toaster } from "@/components/ui/toast";
+import { Toaster as SonnerToaster } from "sonner";
 
 const outfitHeading = Outfit({
   subsets: ["latin"],
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           >
             {children}
             <Toaster />
+            <SonnerToaster richColors closeButton />
           </ThemeProvider>
         </QueryProvider>
       </body>
